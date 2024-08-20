@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Chrome, Safari, Edge, Opera */
+  .no-arrows::-webkit-outer-spin-button,
+  .no-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .dark-mode {
+    --bg: #000002;
+    --green: #00da3c;
+    --orange: #ff5c00;
+    --green-btn: #00be8f;
+    --font: #ffffff;
+    --font-green: #00cc00;
+    --font-red: #ea4335;
+    --bg2: #4d4d4d;
+    --blck_order: #a6a6a6;
+    --footer-bg: #000000;
+    --message-input-bg: #ffffff;
+    --link-text: #00adef;
+    --avatar-bg: #d9d9d9;
+    --selected-bg: #ffffff1a;
+    --fixture-title-bg: #221139;
+    --auth-disabled: #ffffff80;
+    --font-gold: #f7a600;
+    --green33: #00da3c33;
+    --orange00: #ff5c00;
+    --audit-bg: #0ea5e9;
+    --selected-tab: #ffffff;
+    --bg-shadow: #00000080;
+    --support-bg: #323030;
+  }
+
+  .light-mode {
+    --cal: "../../assets/svgs/calculate.svg";
+    --bg: #f1f1f1;
+    --green: #00da3c;
+    --orange: #ff5c00;
+    --green-btn: #00be8f;
+    --bg2: #d4d4d4;
+    --font: #000000;
+    --font-green: #00cc00;
+    --font-red: #ea4335;
+    --blck_order: #6a6a6a;
+    --footer-bg: #ffffff;
+    --message-input-bg: #f1f1f1;
+    --link-text: #00adef;
+    --avatar-bg: #d9d9d9;
+    --selected-bg: #ffffff1a;
+    --fixture-title-bg: #221139;
+    --auth-disabled: #0000004d;
+    --font-gold: #fbbc05;
+    --green33: #00da3c33;
+    --orange00: #ff5c00;
+    --audit-bg: #0ea5e9;
+    --selected-tab: #000000;
+    --bg-shadow: #fbfbfb;
+    --support-bg: #ffffff;
+  }
+}
