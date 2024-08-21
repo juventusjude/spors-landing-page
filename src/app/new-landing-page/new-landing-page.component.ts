@@ -9,4 +9,8 @@ import { RouterModule } from '@angular/router';
   templateUrl: './new-landing-page.component.html',
   styleUrl: './new-landing-page.component.css',
 })
-export class NewLandingPageComponent {}
+export class NewLandingPageComponent {
+  openSupport() {
+    window.open('https://spors-client.vercel.app/support', '_blank');
+  }
+}

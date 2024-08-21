@@ -19,7 +19,7 @@
     --font: #ffffff;
     --font-green: #00cc00;
     --font-red: #ea4335;
-    --bg2: #4d4d4d;
+    --bg2: #16171c;
     --blck_order: #a6a6a6;
     --footer-bg: #000000;
     --message-input-bg: #ffffff;
@@ -35,6 +35,9 @@
     --selected-tab: #ffffff;
     --bg-shadow: #00000080;
     --support-bg: #323030;
+    --border-color: #979797;
+    --card-bg: #181510;
+    --border-orange: #f7a600;
   }
 
   .light-mode {
@@ -62,5 +65,8 @@
     --selected-tab: #000000;
     --bg-shadow: #fbfbfb;
     --support-bg: #ffffff;
+    --border-color: #979797;
+    --card-bg: #e7eaef;
+    --border-orange: #f7a600;
   }
 }
