@@ -13,4 +13,8 @@ export class NewLandingPageComponent {
   openSupport() {
     window.open('https://spors-client.vercel.app/support', '_blank');
   }
+
+  trade() {
+    window.open('https://spors-client.vercel.app', '_blank');
+  }
 }
