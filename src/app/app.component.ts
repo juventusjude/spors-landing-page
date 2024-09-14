@@ -10,7 +10,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'spors-landing-page';
+  title = 'spox';
 
   uiMode = '0';
 }
