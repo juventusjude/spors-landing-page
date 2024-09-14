@@ -11,10 +11,10 @@ import { RouterModule } from '@angular/router';
 })
 export class NewLandingPageComponent {
   openSupport() {
-    window.open('https://spors-client.vercel.app/support', '_blank');
+    window.open('https://spox.vercel.app/support', '_blank');
   }
 
   trade() {
-    window.open('https://spors-client.vercel.app', '_blank');
+    window.open('https://spox.vercel.app', '_blank');
   }
 }
