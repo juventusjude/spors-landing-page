@@ -344,9 +344,19 @@
   <div class="py-10 flex flex-col items-center gap-4">
     <h5 class="text-lg lg:text-3xl font-medium text-[--font]">Support</h5>
     <div class="flex items-center justify-center gap-5">
-      <p class="text-sm md:text-base text-[--font] cursor-pointer">Demo</p>
       <p
-        class="text-sm md:text-base text-[--font] cursor-pointer"
+        class="text-sm md:text-base text-[--font] cursor-pointer hover:text-[--border-orange]"
+      >
+        Demo
+      </p>
+      <p
+        class="text-sm md:text-base text-[--font] cursor-pointer hover:text-[--border-orange]"
+        [routerLink]="['/about']"
+      >
+        About Spox
+      </p>
+      <p
+        class="text-sm md:text-base text-[--font] cursor-pointer hover:text-[--border-orange]"
         (click)="openSupport()"
       >
         Contact us
