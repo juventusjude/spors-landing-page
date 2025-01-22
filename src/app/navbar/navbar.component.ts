@@ -14,7 +14,6 @@ export class NavbarComponent {
 
   constructor(private location: Location) {
     this.currentRoute = this.location.path();
-    console.log('banners', typeof this.location.path());
   }
 
   navigateBar(value: string) {
