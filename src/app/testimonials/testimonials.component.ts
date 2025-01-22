@@ -1,20 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import {
-  SlickCarouselComponent,
-  SlickCarouselModule,
-} from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-testimonials',
   standalone: true,
-  imports: [CommonModule, RouterModule, SlickCarouselModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './testimonials.component.html',
   styleUrl: './testimonials.component.css',
 })
 export class TestimonialsComponent {
-  @ViewChild('slickCarousel') slickCarousel!: SlickCarouselComponent;
   slides!: any;
   banners!: any;
   isLoggedin!: boolean;
@@ -52,13 +47,5 @@ export class TestimonialsComponent {
     ];
 
     // console.log(this.banners);
-  }
-
-  goToNext() {
-    this.slickCarousel.slickNext();
-  }
-
-  goToPrevious() {
-    this.slickCarousel.slickPrev();
   }
 }

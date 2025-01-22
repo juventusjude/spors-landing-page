@@ -1,12 +1,12 @@
 <!-- <div class="w-full"> -->
-<ngx-slick-carousel
+<!-- <ngx-slick-carousel
   class="w-full flex justify-center"
   #slickModal="slick-carousel"
   [config]="slideConfig"
   #slickCarousel
->
-  <div ngxSlickItem *ngFor="let banner of banners">
-    <div class="relative w-full h-[14rem] text-white">{{ banner.info }}</div>
-  </div>
-</ngx-slick-carousel>
+> -->
+<div *ngFor="let banner of banners">
+  <div class="relative w-full h-[14rem] text-white">{{ banner.info }}</div>
+</div>
+<!-- </ngx-slick-carousel> -->
 <!-- </div> -->
