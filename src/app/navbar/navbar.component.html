@@ -1,5 +1,5 @@
 <div
-  class="flex justify-between items-center px-5 md:px-10 lg:px-24 py-3 bg-[--bg]"
+  class="grid grid-cols-3 items-center px-5 md:px-10 lg:px-24 py-3 bg-[--bg]"
 >
   <img
     src="../../assets/svgs/spox-icon.svg"
@@ -8,13 +8,28 @@
     [routerLink]="['/']"
   />
 
-  <div class="flex items-center gap-4">
-    <button
-      class="px-4 py-2 font-medium rounded-lg bg-[--border-orange] text-[--font] text-sm"
+  <div class="flex items-center justify-center gap-5">
+    <p
+      [routerLink]="['/']"
+      (click)="navigateBar('')"
+      [ngClass]="
+        currentRoute === '' ? 'text-[--border-orange]' : 'text-[--font]'
+      "
+      class="text-xs md:text-sm cursor-pointer hover:text-[--border-orange]"
     >
-      Launch App
-    </button>
-
-    <!-- <img src="../../assets/svgs/naija-icon.svg" alt="Nigeria" class="w-10" /> -->
+      Home
+    </p>
+    <p
+      [ngClass]="
+        currentRoute === '/about' ? 'text-[--border-orange]' : 'text-[--font]'
+      "
+      class="text-xs md:text-sm cursor-pointer hover:text-[--border-orange]"
+      [routerLink]="['/about']"
+      (click)="navigateBar('/about')"
+    >
+      About us
+    </p>
   </div>
+
+  <div></div>
 </div>

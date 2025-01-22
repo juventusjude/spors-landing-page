@@ -1,6 +1,6 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { CommonModule, Location } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,4 +9,15 @@ import { RouterModule } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  currentRoute!: string;
+
+  constructor(private location: Location) {
+    this.currentRoute = this.location.path();
+    console.log('banners', typeof this.location.path());
+  }
+
+  navigateBar(value: string) {
+    this.currentRoute = value;
+  }
+}
