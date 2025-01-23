@@ -21,13 +21,15 @@
     </p>
     <p
       [ngClass]="
-        currentRoute === '/about' ? 'text-[--border-orange]' : 'text-[--font]'
+        currentRoute === '/learn-more'
+          ? 'text-[--border-orange]'
+          : 'text-[--font]'
       "
       class="text-xs md:text-sm cursor-pointer hover:text-[--border-orange]"
-      [routerLink]="['/about']"
-      (click)="navigateBar('/about')"
+      [routerLink]="['/learn-more']"
+      (click)="navigateBar('/learn-more')"
     >
-      About us
+      Learn more
     </p>
   </div>
 
