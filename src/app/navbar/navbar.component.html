@@ -15,7 +15,7 @@
       [ngClass]="
         currentRoute === '' ? 'text-[--border-orange]' : 'text-[--font]'
       "
-      class="text-xs md:text-sm cursor-pointer hover:text-[--border-orange]"
+      class="text-sm md:text-base font-semibold cursor-pointer hover:text-[--border-orange]"
     >
       Home
     </p>
@@ -25,7 +25,7 @@
           ? 'text-[--border-orange]'
           : 'text-[--font]'
       "
-      class="text-xs md:text-sm cursor-pointer hover:text-[--border-orange]"
+      class="text-sm md:text-base font-semibold cursor-pointer hover:text-[--border-orange]"
       [routerLink]="['/learn-more']"
       (click)="navigateBar('/learn-more')"
     >
