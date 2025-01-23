@@ -1,5 +1,5 @@
 <div
-  class="grid grid-cols-3 items-center px-5 md:px-10 lg:px-24 py-3 bg-[--bg]"
+  class="flex justify-between md:grid md:grid-cols-3 items-center px-5 md:px-10 lg:px-24 py-3 bg-[--bg]"
 >
   <img
     src="../../assets/svgs/spox-icon.svg"
@@ -8,7 +8,7 @@
     [routerLink]="['/']"
   />
 
-  <div class="flex items-center justify-center gap-5">
+  <div class="flex justify-end items-center md:justify-center gap-5 w-full">
     <p
       [routerLink]="['/']"
       (click)="navigateBar('')"
